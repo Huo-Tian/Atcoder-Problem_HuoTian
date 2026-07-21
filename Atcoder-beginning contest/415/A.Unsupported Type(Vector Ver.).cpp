@@ -12,8 +12,10 @@ int main() {
 		a.push_back(x);
 	}
 	cin >> x;
-	if(a.find(a.begin(), a.end(), x)) {
+    auto it = find(a.begin(), a.end(), x);
+	if(it != a.end()) {
 		cout << "Yes" << endl;
-	} else
+	} else {
 		cout << "No" << endl;
+    }
 }
