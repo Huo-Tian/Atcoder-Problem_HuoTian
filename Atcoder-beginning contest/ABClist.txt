@@ -1,8 +1,0 @@
-本条目基于Atcoder-beginner contest编写
-
-本目录中所有文件：
-名称->ATcoder官方
-代码->Huo-Tian
-
-目前有ABC416->451
-推出：Atcoder Weekday Contest(AWC) codes
