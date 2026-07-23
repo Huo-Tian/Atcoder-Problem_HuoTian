@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int n, a[1010][1010], x, y;
+int n, a[200010][120], x, y;
 
 int main() {
 	cin >> n;

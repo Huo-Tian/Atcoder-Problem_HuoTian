@@ -19,5 +19,5 @@ int main() {
             }
         }
     }
-    printf("%.17lf", ans);
+    printf("%.15lf", ans);
 }

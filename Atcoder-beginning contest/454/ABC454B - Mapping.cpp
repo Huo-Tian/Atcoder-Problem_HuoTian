@@ -3,29 +3,26 @@ using namespace std;
 
 int n, m;
 int f[100010];
-bool flag[101010];
+int b[100010];
 
 int main() {
     cin >> n >> m;
-    bool f1 = true;
     for(int i = 1; i <= n; i ++) {
         cin >> f[i];
-        if(flag[f[i]] == true) {
-            cout << "No" << endl;
-            f1 = false;
+        b[f[i]] ++;
+    }
+    bool flag1 = true, flag2 = true;
+    for(int i = 1; i <= m; i ++) {
+        if(b[i] >= 2) {
+            flag1 = false;
             break;
-        } else {
-            flag[f[i]] = true;
         }
     }
-    if(f1) {
-        cout << "Yes\n";
-    }
-    for(int i = 1; i <= m ;i ++) {
-        if(flag[i] != true) {
-            cout << "No\n";
-            return 0;
+    for(int i = 1; i <= m; i ++) {
+        if(b[i] == 0) {
+            flag2 = false;
+            break;
         }
     }
-    cout << "Yes\n";
+    cout << (flag1 ? "Yes\n" : "No\n") << (flag2 ? "Yes\n" : "No\n");
 }
