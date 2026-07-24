@@ -5,17 +5,11 @@ int x, c;
 
 int main() {
 	cin >> x >> c;
-	for(int i = x; i; i -= 1000) {
-		double sum = 1.0 * i * (c / 1000.0);
-		//cout << sum + i << endl;
-		if(sum + i <= x) {
-			if(i % 1000 == 0) {
-				cout << i << endl;
-				return 0;
-			} else {
-				break;
-			}
-		}
-	}
-	cout << 0 << endl;
+	for(int i = 1; i <= x / 1000; i ++) {
+        if(i * (1000 + c) > x) {
+            cout << (i - 1) * 1000 << endl;
+            return 0;
+        }
+    }
+    cout << 0 << endl;
 }
