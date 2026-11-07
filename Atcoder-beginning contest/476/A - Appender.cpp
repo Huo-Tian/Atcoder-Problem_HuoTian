@@ -1,9 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int n;
 string s;
 
 int main() {
-    
+    cin >> s;
+    cout << s << (s[s.size() - 1] == 'e' ? "r" : "er");
 }

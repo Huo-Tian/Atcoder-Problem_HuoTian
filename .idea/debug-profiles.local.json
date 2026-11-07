@@ -1,0 +1,9 @@
+{
+  "debug-profiles": [
+    {
+      "id": "505d599c-1146-459b-b01a-1f270016f86d",
+      "type": "lldb",
+      "name": "LLDB"
+    }
+  ]
+}

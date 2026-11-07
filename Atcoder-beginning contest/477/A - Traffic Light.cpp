@@ -1,0 +1,9 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+char s;
+
+int main() {
+    cin >> s;
+    cout << (s == 'B' ? "Y" : (s == 'R' ? "B" : "R"));
+}
